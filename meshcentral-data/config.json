@@ -1,15 +1,16 @@
 {
   "settings": {
+    "port": 443,
     "redirPort": 80,
-    "agentPort": 4433,
-    "wanonly": true,
-    "cert": "self",
-    "mongodb": "mongodb://localhost/meshcentral"
+    "bind": ["127.0.0.1", "0.0.0.0"],
+    "WANonly": true,
+    "minify": true,
+    "sessionKey": "replace_this_with_a_secure_key"
   },
-  "domain": "meshcentral-on-render",
-  "title": "MeshCentral on Render",
-  "minify": true,
-  "allowLoginToken": true,
-  "newAccounts": false,
-  "plugins": {}
+  "domains": {
+    "": {
+      "title": "MeshCentral",
+      "userMeshLocalNetworkName": true
+    }
+  }
 }
