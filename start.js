@@ -31,3 +31,13 @@ updateConfig();
 
 // Start MeshCentral
 require('./bin/meshcentral');
+
+const http = require('http');
+const server = http.createServer((req, res) => {
+  res.writeHead(200);
+  res.end('MeshCentral Fallback Alive');
+});
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`🌐 Fallback HTTP server listening on 0.0.0.0:${PORT}`);
+});
+
