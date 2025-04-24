@@ -33,7 +33,7 @@ server.listen(PORT, '0.0.0.0', () => {
 // Step 3: Start MeshCentral using spawn so we can see output
 console.log('🚀 Starting MeshCentral...');
 
-const mesh = spawn('node', ['bin/meshcentral'], { stdio: 'inherit' });
+const mesh = spawn('node', ['meshcentral-deploy/node_modules/meshcentral'], { stdio: 'inherit' });
 
 mesh.on('error', (err) => {
   console.error('❌ Failed to start MeshCentral:', err);
