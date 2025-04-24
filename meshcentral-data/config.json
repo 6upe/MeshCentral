@@ -1,10 +1,10 @@
 {
   "settings": {
-    "port": 443,
-    "redirPort": 80,
-    "agentPort": 4433,
-    "wanonly": true,
-    "cert": "self",
+    "port": 443,         // Use port 443 for HTTPS
+    "redirPort": 80,     // Redirect HTTP traffic to HTTPS
+    "agentPort": 4433,   // Port for agents to communicate
+    "wanonly": true,     // Enable WAN mode (internet mode)
+    "cert": "self",      // Use self-signed certs
     "mongodb": "mongodb://localhost/meshcentral"
   },
   "domain": "render",
