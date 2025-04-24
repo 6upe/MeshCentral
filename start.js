@@ -1,20 +1,15 @@
 const fs = require('fs');
-const path = require('path');
+const meshcentral = require('./bin/meshcentral');
 
-const CONFIG_PATH = path.join(__dirname, 'meshcentral-data', 'config.json');
-const PORT = process.env.PORT || 3000; // Fallback for local dev
+// Dynamically modify config.json
+const configPath = './meshcentral-data/config.json';
+let config = require(configPath);
 
-// Load config file
-const config = JSON.parse(fs.readFileSync(CONFIG_PATH));
-
-// Inject dynamic Render port
 config.settings = config.settings || {};
-config.settings.port = parseInt(PORT, 10);
+config.settings.port = process.env.PORT || 443; // Fallback to 443 if not on Render
 
-// Save updated config
-fs.writeFileSync(CONFIG_PATH, JSON.stringify(config, null, 2));
-
-console.log(`✅ Updated config.json with port ${PORT}`);
+// Write updated config back
+fs.writeFileSync(configPath, JSON.stringify(config, null, 2));
 
 // Start MeshCentral
-require('./bin/meshcentral');
+require('./meshcentral.js');
