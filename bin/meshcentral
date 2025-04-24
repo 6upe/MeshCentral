@@ -1,3 +1,2 @@
 #! /usr/bin/env node
 require("../meshcentral.js");
-console.log("🔁 MeshCentral starting on bind IPs:", config.settings.bind, "Port:", config.settings.port);
