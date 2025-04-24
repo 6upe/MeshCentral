@@ -1,16 +1,17 @@
 {
   "settings": {
-    "port": 443,
-    "redirPort": 80,
-    "bind": ["127.0.0.1", "0.0.0.0"],
-    "WANonly": true,
-    "minify": true,
-    "sessionKey": "replace_this_with_a_secure_key"
+    "port": 10000,
+    "bind": ["0.0.0.0"],
+    "agentPort": 0
   },
   "domains": {
     "": {
-      "title": "MeshCentral",
-      "userMeshLocalNetworkName": true
+      "title": "My MeshCentral Server",
+      "title2": "Welcome",
+      "newAccounts": true
     }
+  },
+  "letsencrypt": {
+    "enabled": false
   }
 }
