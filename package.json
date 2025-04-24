@@ -64,6 +64,6 @@
   },
   "readme": "readme.md",
   "scripts": {
-    "start": "node bin/meshcentral"
+    "start": "node start.js"
   }
 }
