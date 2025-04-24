@@ -1,0 +1,16 @@
+{
+  "settings": {
+    "port": 443,
+    "redirPort": 80,
+    "agentPort": 4433,
+    "wanonly": true,
+    "cert": "self",
+    "mongodb": "mongodb://localhost/meshcentral"
+  },
+  "domain": "render",
+  "title": "MeshCentral",
+  "minify": true,
+  "allowLoginToken": true,
+  "newAccounts": false,
+  "plugins": {}
+}
