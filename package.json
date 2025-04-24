@@ -62,5 +62,8 @@
     "type": "git",
     "url": "https://github.com/Ylianst/MeshCentral.git"
   },
-  "readme": "readme.md"
+  "readme": "readme.md",
+  "scripts": {
+    "start": "node bin/meshcentral"
+  }
 }
