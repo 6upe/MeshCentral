@@ -2,7 +2,9 @@
   "settings": {
     "port": 10000,
     "aliasPort": 443,
-    "bind": ["0.0.0.0"],
+    "bind": [
+      "0.0.0.0"
+    ],
     "redirPort": 80,
     "allowLoginToken": true
   },
