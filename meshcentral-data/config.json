@@ -1,17 +1,17 @@
 {
   "settings": {
     "port": 10000,
+    "aliasPort": 443,
     "bind": ["0.0.0.0"],
-    "agentPort": 0
+    "redirPort": 80,
+    "allowLoginToken": true
   },
   "domains": {
     "": {
-      "title": "My MeshCentral Server",
-      "title2": "Welcome",
-      "newAccounts": true
+      "title": "MeshCentral Server",
+      "title2": "Login",
+      "newAccounts": true,
+      "userNameIsEmail": false
     }
-  },
-  "letsencrypt": {
-    "enabled": false
   }
 }
