@@ -10,6 +10,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "meshcentral": "^1.1.44"
+    "loadavg-windows": "1.1.1",
+    "meshcentral": "^1.1.44",
+    "node-windows": "^0.1.14",
+    "otplib": "12.0.1"
   }
 }

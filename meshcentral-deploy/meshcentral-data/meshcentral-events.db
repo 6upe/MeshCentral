@@ -1,0 +1,7 @@
+{"$$indexCreated":{"fieldName":"ids","unique":false,"sparse":false}}
+{"$$indexCreated":{"fieldName":"nodeid","unique":false,"sparse":true}}
+{"$$indexCreated":{"fieldName":"time","unique":false,"sparse":false}}
+{"$$indexCreated":{"fieldName":"ids"}}
+{"$$indexCreated":{"fieldName":"nodeid","sparse":true}}
+{"$$indexCreated":{"fieldName":"time","expireAfterSeconds":1728000}}
+{"etype":"server","action":"started","msg":"Server started","time":{"$$date":1745503448467},"ids":["*"],"_id":"GYu1n3kKWWM82D9X"}
